@@ -78,6 +78,8 @@ for repo in org.get_repos():
             file.write('''name: SonarQube
 
 on:
+  workflow_dispatch:
+  workflow_call:
   push:
     branches:
       - master
